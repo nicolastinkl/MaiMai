@@ -1,0 +1,9 @@
+Package: com.fuckingtk.tkmaimai
+Name: tkmaimai
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: tk
+Author: tk
+Section: Tweaks
