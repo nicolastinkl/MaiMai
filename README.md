@@ -11,12 +11,32 @@
 - cycript 注入ipa
 - Flexloader 越狱后监听https请求和所有相关ipa数据
 - Hopper 反汇编静态分析ipa
-- Thos 越狱必备 
+- Theos 越狱必备 
 
 # 原理
  <strong> 通过动态调试静态分析和网络请求监控找到匿名处理类，然后hook调用其它接口查询出用户信息显示到界面。</strong>
 
 # 用法
+
+```
+
+$ /opt/theos/bin/nic.pl
+NIC 2.0 - New Instance Creator
+------------------------------
+  [1.] iphone/activator_event
+  [2.] iphone/application_modern
+  [3.] iphone/cydget
+  [4.] iphone/flipswitch_switch
+  [5.] iphone/framework
+  [6.] iphone/ios7_notification_center_widget
+  [7.] iphone/library
+  [8.] iphone/notification_center_widget
+  [9.] iphone/preference_bundle_modern
+  [10.] iphone/tool
+  [11.] iphone/tweak   √√√√√√√√√√√
+  [12.] iphone/xpc_service
+  
+```
 
 ```
 
