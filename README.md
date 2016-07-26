@@ -20,10 +20,10 @@
 前提条件：
 
 - 确保电脑和iPhone设备同一局域网 如 mac: 192.168.1.51 iPhone6: 192.1681.168
-- 远程登录设备==ssh root@192.168.1.168== 输入密码 ==alpine== ,登录后即可修改密码 ==passwd root==
+- 远程登录设备 ssh root@192.168.1.168 输入密码 alpine ,登录后即可修改密码 passwd root
 - github下载并安装配置Theos: https://github.com/theos/theos.git 
 - 配置ldid http://joedj.net/ldid 并移动到本机目录 /opt/theos/bin
-- 配置 dpkg-deb: 从 https://raw.githubusercontent.com/DHowett/dm.pl/master/dm.pl 下载后改名 ==dpkg-deb== 后，放到 */opt/theos/bin/* 目录下，然后设置它的可执行权限.
+- 配置 dpkg-deb: 从 https://raw.githubusercontent.com/DHowett/dm.pl/master/dm.pl 下载后改名 dpkg-deb 后，放到 */opt/theos/bin/* 目录下，然后设置它的可执行权限.
 - SSH远程在iPhone时，远程拷贝文件到本机：**scp -r maimai root@192.168.1.51:/Users/tk/GoogleDrive/BreakerPrison**
 
 
