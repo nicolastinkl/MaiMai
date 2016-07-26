@@ -5,18 +5,27 @@
 
 # 工具
 - Class-dump-z 导出ipa头文件
-- Clutch 去壳（脉脉有加壳）破解ipa
-- SSH 远程登录
+- Clutch 去壳（脉脉有加壳）破解ipa https://github.com/KJCracks/Clutch
+- OpenSSH、SCP 远程登录、远程拷贝（ Cydia中搜索并安装OpenSSH）
 - GDB 远程调试
-- Cycript 注入ipa
-- Flexloader 越狱后监听https请求和所有相关ipa数据
-- Hopper 反汇编静态分析ipa
-- Theos 越狱必备 
+- Cycript 注入ipa http://www.cycript.org/manual/ **官方介绍：Cycript is a hybrid of ECMAScript some-6, Objective-C++, and Java.**
+- Flexloader 越狱后监听https请求和所有相关ipa数据 (Cydia搜索下载和SDK真机调试)
+- Hopper 反汇编静态分析ipa  **汇编ObjC必备或者IDA6.6** 
+- Theos 越狱必备 **Tweek系统增强，程序外挂**
 
 # 原理
  <strong> 通过动态调试静态分析和网络请求监控找到匿名处理类，然后hook调用其它接口查询出用户信息显示到界面。</strong>
 
 # 教程
+前提条件：
+
+- 确保电脑和iPhone设备同一局域网 如 mac: 192.168.1.51 iPhone6: 192.1681.168
+- 远程登录设备==ssh root@192.168.1.168== 输入密码 ==alpine== ,登录后即可修改密码 ==passwd root==
+- github下载并安装配置Theos: https://github.com/theos/theos.git 
+- 配置ldid http://joedj.net/ldid 并移动到本机目录 /opt/theos/bin
+- 配置 dpkg-deb: 从 https://raw.githubusercontent.com/DHowett/dm.pl/master/dm.pl 下载后改名 ==dpkg-deb== 后，放到 */opt/theos/bin/* 目录下，然后设置它的可执行权限.
+- SSH远程在iPhone时，远程拷贝文件到本机：**scp -r maimai root@192.168.1.51:/Users/tk/GoogleDrive/BreakerPrison**
+
 
 1） 设置Theos Tweek
 
