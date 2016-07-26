@@ -83,7 +83,7 @@ access_token 字段到 access_token 是请求必备信息，验证当前请求�
 ```
 
 
-![](http://7xq9bx.com1.z0.glb.clouddn.com/DA9B017D-1D1D-4FFD-8AE0-4391279B6331.png)
+![](http://7xq9bx.com1.z0.glb.clouddn.com/DA9B017D-1D1D-4FFD-8AE0-4391279B6331.png?imageView2/1/w/1000/h/600/interlace/0/q/100)
 
 # FAQ
 
