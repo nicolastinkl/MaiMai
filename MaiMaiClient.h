@@ -202,3 +202,36 @@
 -(id)rac_preUploadAddressBook:(id)book;
 @end
 
+@interface ContactSubmodel: NSObject {}
+
+@property(retain, nonatomic) NSString* title;
+@property(retain, nonatomic) NSString* company;
+@property(assign, nonatomic) BOOL isInCompany;
+@property(retain, nonatomic) NSString* accountFromSearch;
+@property(retain, nonatomic) NSString* localMobile;
+@property(assign, nonatomic) unsigned inApp;
+@property(assign, nonatomic) int isSent;
+@property(assign, nonatomic) int sortKey;
+@property(assign, nonatomic) int joinTime;
+@property(assign, nonatomic) int dist;
+@property(assign, nonatomic) unsigned rank;
+@property(assign, nonatomic) unsigned commonFriendNum;
+@property(assign, nonatomic) unsigned gender;
+@property(assign, nonatomic) unsigned judge;
+@property(retain, nonatomic) NSString* pinyin;
+@property(retain, nonatomic) NSString* avatar;
+@property(retain, nonatomic) NSString* line3;
+@property(retain, nonatomic) NSString* line2;
+@property(retain, nonatomic) NSString* line1;
+@property(retain, nonatomic) NSString* name;
+@property(retain, nonatomic) NSString* career;
+@property(retain, nonatomic) NSString* ouid;
+@property(retain, nonatomic) NSString* mmid;
+@property(retain, nonatomic) NSString* ustr;
+@property(retain, nonatomic) NSString* subTitle;
+@property(retain, nonatomic) NSString* jobLine;
+
+-(id)getPySortHeader;
+-(void)innerInitwithDic:(id)dic;
+
+@end

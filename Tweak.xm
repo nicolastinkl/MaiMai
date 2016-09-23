@@ -15,17 +15,23 @@
 
 	%log;
 
-	%orig;
-
-	NSLog(@" =========================   OK    ========================");
+	%orig; 
 
 
 	id someobj = [%c(NTContactsUtil) getDist1Contacts];
-	NSLog(@" obj :  %@",someobj);
+	//NSLog(@" obj :  %@",someobj);
 
+	if ([someobj isKindOfClass:[NSArray class]]) {
+		NSArray * array = someobj;
+		[array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+     		ContactSubmodel * smodel = obj;
+     		NSLog(@"%@  %@  %@  %@",smodel.name, smodel.mmid, smodel.title, smodel.company);
+ 		}];
 
-	id om =  [%c(NTContactsUtil) getDist1ContactsByMMIDs:@[@"3180",@"u12372540734003",@"u144221354572539"]];
-	NSLog(@" %@  ",om);
+	}
+
+	//id om =  [%c(NTContactsUtil) getDist1ContactsByMMIDs:@[@"3180",@"u12372540734003",@"u144221354572539"]];
+	//NSLog(@" %@  ",om);
 
 
 	return YES;
